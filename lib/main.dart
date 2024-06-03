@@ -156,11 +156,16 @@ class HomePage extends StatelessWidget {
     return Scaffold(
         backgroundColor: Color(0xff1897ff),
         appBar: AppBar(
-          backgroundColor: Colors.blueAccent,
+          backgroundColor: Color(0xff1271ff),
           title: const Text('Bienvenido de vuelta, jugador'),
         ),
         body: Column(
           children: [
+            Padding(
+              padding: EdgeInsets.all(8),
+              child: Image.network(
+                  "https://raw.githubusercontent.com/CobosTrevinoMartinGabriel/Img_ios/main/AA.jpg"),
+            ),
             Text(email),
             Center(
               child: ElevatedButton(
